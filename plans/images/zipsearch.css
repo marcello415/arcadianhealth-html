@@ -1,0 +1,65 @@
+
+
+/* Zip code search (location search, too) --------------------- */
+
+#zipSearch, #locationSearch  {
+	padding-left:20px;
+	padding-top:15px;
+}
+#zipSearch p, #locationSearch p {
+	float:none;
+}
+#zipSearch table td, #locationSearch table td {
+	padding:5px;
+}
+#zipSearch .instructions, #locationSearch .instructions {
+	font-size:16px;
+	padding-left:10px;
+	background:url(/web/20101020170211im_/http://desertcanyoncommunitycare.com/images/arrowRight.gif) 0 5px no-repeat;
+}
+#zipSearch .qMarkIcon, #locationSearch .qMarkIcon {
+	padding: 0pt 0pt 3px;
+}
+#zipSearch .zipField, #locationSearch .zipField {
+	width: 105px; 
+	height: 20px;
+}
+#zipSearch .submitBtn, #locationSearch .submitBtn {
+	padding-right:0px;
+}
+
+
+#zipErrorMsg, #locationErrorMsg {
+	margin-bottom: 15px; 
+	margin-top: 15px;
+	display:none;
+}
+
+
+/* ----------------------------------- */
+
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 17:02:11 Oct 20, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 08:13:14 May 19, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 136.499
+  exclusion.robots: 0.129
+  exclusion.robots.policy: 0.113
+  cdx.remote: 0.098
+  esindex: 0.015
+  LoadShardBlock: 98.351 (3)
+  PetaboxLoader3.datanode: 105.814 (4)
+  load_resource: 84.346
+  PetaboxLoader3.resolve: 63.521
+*/

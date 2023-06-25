@@ -1,0 +1,430 @@
+
+
+/*------- TAGS -------*/
+body {
+	background:#FFF url(bgk_diagLines.gif) left top repeat;
+	font:12px normal Arial, Helvetica, sans-serif;
+	color:#333333;
+}
+p {
+	margin-bottom:1em;
+}
+a {
+	color:#00699a;
+}
+a:hover {
+	text-decoration:none;
+}
+
+h1 {
+	background-color:#daeef6;
+	font-size: 16px;
+	font-weight:normal;
+	color: #00669a;
+	height:27px;
+	padding:9px 0 0 12px;
+	margin-bottom:12px;
+}
+h2 {
+	background:url(bkg_h2.gif) left top no-repeat;
+	font-size:16px;
+	font-weight:normal;
+	color:#FFF;
+	height:26px;
+	padding:4px 0 0 12px;
+}
+
+
+.orange {
+	background:url(bkg_h2_orange.gif) left top no-repeat;
+	font-size:16px;
+	font-weight:normal;
+	color:#FFF;
+	height:26px;
+	padding:4px 0 0 12px;
+}
+
+h2.smallerText {
+	font-size:15px;
+	padding-top:5px;
+}
+
+h3 {
+	font-weight:normal;
+	font-size: 16px;
+	color: #00669a;
+	margin-bottom:.5em;
+}
+
+/*------- Container -------*/
+#container {
+	width:968px;
+	margin:10px auto;
+}
+#container .cTop {
+	width:968px;
+	height:9px;
+	background:url(bkg_outerFrame_top.png) left top no-repeat;
+}
+#container .cMiddle {
+	padding:0 4px;
+	background:url(bkg_outerFrame_middle.png) left top repeat-y;
+}
+#container .cBottom {
+	width:968px;
+	height:9px;
+	background:url(bkg_outerFrame_bottom.png) left bottom no-repeat;
+}
+
+/*------- Header -------*/
+#header {
+	position:relative;
+	width:960px;
+	height:93px;
+}
+#header .branding {
+	display:block;
+	position:absolute;
+	width:349px;
+	height:46px;
+	top:22px;
+	left:25px;
+	text-indent:-9999px;
+	overflow:hidden;
+	background:url(logo_arcadian.gif) left top no-repeat;
+	cursor:pointer;
+}
+#header .links {
+	display:block;
+	position:absolute;
+	font-weight:bold;
+	color:#858585;
+	right:15px;
+	top:18px;
+}
+#header .links a {
+	font-weight:normal;
+	color:#3379a1;
+}
+
+
+#textSizeControl {
+	display:block;
+	position:absolute;
+	font-size:11px;
+	color:#2575b0;
+	right:15px;
+	top:43px;
+	border:#ccc solid 1px;
+}
+#textSizeControl li {
+	height:20px;
+	padding-bottom:5px;
+	float:left;
+	border-left:#ccc solid 1px;
+}
+#textSizeControl a {
+	display:block;
+  padding:8px;
+	cursor:pointer;
+}
+#textSizeControl span {
+	display:block;
+  padding:8px 8px;
+}
+#textSizeControl .size1 {
+	line-height:1em;
+	padding-top:7px;
+  font-size:1em;
+}
+#textSizeControl .size2 {
+	line-height:1em;
+	padding-top:5px;
+  font-size:1.3em;
+}
+#textSizeControl .size3 {
+	line-height:1em;
+	padding-top:3px;
+  font-size:1.6em;
+}
+#textSizeControl .first {
+	border:none;
+}
+#textSizeControl .active {
+	background-color:#fff;
+}
+#textSizeControl .inactive {
+	background-color:#ededed;
+}
+
+/*------- Main Nav -------*/
+#mainNav {
+	width:960px;
+	height:48px;
+	background:url(bkg_mainMenu.jpg) top left repeat-x;
+	text-align:center;
+	list-style:none;
+}
+#mainNav ul {
+	float:none;
+	padding-top:3px;
+	margin: 0 auto !important;
+	text-align:center;
+	list-style:none;
+	width: 80%;
+}
+#mainNav li {
+	display:block;
+	height:38px;	
+	float:none;
+	padding-top:4px;
+	display:inline-block;
+	
+}
+#mainNav li.active {
+	background:url(bkg_mainMenu_lit.jpg) top left repeat-x;
+}
+#mainNav a {
+	display:inline-block;
+	height:26px;
+	padding:9px 20px 0 19px;
+	border-right:#CCC solid 1px;
+	text-decoration:none;
+}
+#mainNav a.first {
+	border-left:#CCC solid 1px;
+}
+#mainNav a:hover {
+	text-decoration:none;
+	color:#339ccd;
+}
+
+/*------- Main Content -------*/
+#mainContent {
+	clear:both;
+	width:934px;
+	margin:18px auto 0 auto;
+}
+#mainContent .top {
+	width:934px;
+	height:4px;
+	background:url(bkg_mainContent_top.gif) left top no-repeat;
+}
+#mainContent .middle {
+	padding:0 3px 0 4px;
+	background:url(bkg_mainContent_middle.gif) left top repeat-y;
+}
+#mainContent .bottom {
+	width:934px;
+	height:4px;
+	background:url(bkg_mainContent_bottom.gif) left bottom no-repeat;
+}
+
+#mainContent .primary {
+	width:680px;
+	float:left;
+	padding-left:9px;
+	margin-bottom:1em;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* Adjust for img shadow offset */
+#mainContent .primary p, #mainContent .primary h3 {
+	padding-left:3px;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+#mainContent .secondary {
+	width:220px;
+	float:right;
+	padding-top:4px;
+}
+
+
+#mainContent .column {
+	width:220px;
+	float:left;
+	padding-left:3px;
+	padding-right:4px;
+	padding-bottom:6px;
+}
+#mainContent .columnContent {
+	margin:8px 12px 12px 12px;
+}
+#mainContent .last {
+	padding-right:0;
+}
+
+#mainContent .divider {
+	background:url(gradientLINE.gif) top left repeat-x;
+	height:5px;
+	margin:24px 0 18px 3px;
+}
+
+
+/*------- Footer -------*/
+#footer {
+	height:20px;
+	padding:69px 12px 0 12px;
+	background:url(bkg_pageBottomGrad.jpg) left top repeat-x;
+}
+#footer .links li{
+	padding-left:3px;
+	float:left;
+}
+	
+
+
+/*------- PAGE SPECIFIC -------*/
+
+/* -- Network -- */
+.coverageInfo {
+	margin-top:60px;
+}
+.coverageInfo p {
+	margin-left:325px;
+	margin-right:10px;
+}
+
+/* -- News -- */
+.newsEntry {
+	margin-top:16px;
+}
+.newsEntry h3, .newsEntry p {
+	margin-left:128px;
+}
+
+
+/*------- GENERAL PURPOSE -------*/
+
+/* Holly Hack - give layout to IE 6 elements */
+/* \*/
+* html .gainlayout { height: 1%; }
+/* */
+
+/* Give layout to IE 7 elements */
+.gainlayout { 
+	min-height: 0; 
+}
+
+/* To prevent margin collapse */
+.giveHeight {
+	height:1px;
+}
+
+.floatLeft {
+	display:block;
+	float:left;
+}
+.floatRight {
+	display:block;
+	float:right;
+}
+.clearFloats {
+	clear:both;
+}
+.noTextHeight {
+	font-size:0;
+}
+.rightAlign {
+	text-align:right;
+}
+.centerImage {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.centerText {
+	text-align:center;
+}
+
+/* Content padding --------------------- */
+
+#mainContent .topPad {
+	padding-top:9px;
+}
+#mainContent .bottomPad {
+	padding-bottom:12px;
+}
+#mainContent .bottomPadBig {
+	padding-bottom:30px;
+}
+.fullLeftRightPad {
+	padding:0 12px;
+}
+.vertImagePad {
+	padding:9px 0 12px 0;
+}
+.topPadBig {
+	padding-top:30px;
+}
+.topPadMed {
+	padding-top:15px;
+}
+.topPadSmall {
+	padding-top:4px;
+}
+.collapseBottomMargin {
+	margin-bottom:0;
+}
+/* ----------------------------------- */
+
+
+
+.plainList {
+	margin:8px 12px 12px 12px;
+}
+.plainList li {
+	margin-bottom:.8em;
+}
+#bold_red span a {
+	color:#F00;
+	font-weight:bold;
+}
+
+.contentList {
+	margin:.5em 13px;
+}
+.contentList li {
+	padding-left:8px;
+	padding-bottom:.5em;
+	background:url(arrow_medBlue.gif) 0 .3em no-repeat;
+}
+.locationList {
+	clear:left;
+	/* Neg margin is hack for ie7 */
+	margin:8px 12px -8px 12px;
+}
+.locationList li {
+	float:left;
+	width:210px;
+	padding:0 5px 12px 0;
+}
+	
+
+.zoomable {
+	font-size:1em;
+}
+
+/*
+     FILE ARCHIVED ON 21:20:40 Apr 28, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:13:07 Apr 04, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 44.999 (3)
+  esindex: 0.01
+  captures_list: 62.269
+  CDXLines.iter: 13.614 (3)
+  PetaboxLoader3.datanode: 50.224 (4)
+  exclusion.robots: 0.204
+  exclusion.robots.policy: 0.19
+  RedisCDXSource: 0.822
+  PetaboxLoader3.resolve: 17.884
+  load_resource: 51.469
+*/

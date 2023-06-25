@@ -1,0 +1,2065 @@
+/* ---------- begin former "reset.css" styles ---------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	font-size: 100%;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: underline;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ---------- end of former "reset.css" styles ------------ */
+
+/*------- TAGS -------*/
+body {
+	background: #fff url('bgk_diagLines.gif') left top repeat;
+	font: 12px normal Arial, Helvetica, sans-serif;
+	color: #005587;
+}
+p {
+	/*margin-bottom:1em;*/
+}
+a {
+	color: #00699a;
+}
+a:link {
+	text-decoration: underline;
+	color: #00699a;
+}
+a:visited {
+	text-decoration: underline;
+	color: #00699a;
+}
+a:hover {
+	text-decoration: underline;
+	color: #00699a;
+}
+a:active {
+	text-decoration: underline;
+	color: #00699a;
+}
+h1 {
+	font-size: 180%;
+	font-weight: normal;
+	color: #00699a;
+}
+h2 {
+	font-size: 160%;
+	font-weight: normal;
+	color: #00699a;
+}
+h3 {
+	font-size: 140%;
+	font-weight: normal;
+	color: #00699a;
+}
+h4 {
+	font-size: 120%;
+	font-weight: bold;
+	color: #00699a;
+}
+h5 {
+	font-size: 100%;
+	font-weight: bold;
+	color: #00699a;
+}
+h6 {
+	font-size: 90%;
+	font-weight: bold;
+	color: #00699a;
+}
+.grayText {
+	color: #666 !important;
+}
+.blackText {
+	color: #000 !important;
+}
+.blueText {
+	color: #00699a !important;
+}
+.redText {
+	color: #990000 !important;
+}
+.bold {
+	font-weight: bold;
+}
+.backToTop {
+	text-align: right;
+	font-size: 100% !important;
+}
+.noWrap {
+	white-space: nowrap;
+}
+.smallText {
+	font-size: 90% !important;
+}
+sup {
+	font-size: 80% !important;
+}
+.valignTextBottom {
+	vertical-align: text-bottom;
+}
+
+/*------- Container -------*/
+#container {
+	width: 968px;
+	margin: 10px auto;
+	z-index:1px;
+}
+#container .cTop {
+	width: 968px;
+	height: 9px;
+	background: url('bkg_outerFrame_top.gif') left top no-repeat;
+}
+#container .cMiddle {
+	padding: 0 4px;
+	background-image: url('bkg_outerFrame_middle.gif');
+	background-position: left top;
+	background-repeat: repeat-y;
+}
+#container .cBottom {
+	width: 968px;
+	height: 9px;
+	background: url('bkg_outerFrame_bottom.gif') left bottom no-repeat;
+}
+
+/*------- Header -------*/
+#header {
+	position: relative;
+	width: 960px;
+	height: 103px;
+}
+#header .branding {
+	display: block;
+	position: absolute;
+	width: 170px;
+	height: 100px;
+	top: 2px;
+	left: 10px;
+	background: url('logo_texasccare_header.gif') left top no-repeat;
+	cursor: pointer;
+}
+#header .links {
+	display: block;
+	position: absolute;
+	font-weight: bold;
+	color: #858585;
+	right: 15px;
+	top: 18px;
+}
+#header .links a {
+	font-weight: normal;
+	color: #3379a1;
+}
+#headerLinks {
+	text-align: right;
+	margin-right: 8px;
+	margin-bottom: 0px;
+}
+#vertBar {
+	margin: 0 12px;
+	width: 2px;
+	height: 50px;
+	background-color: #ccc;
+}
+#needHelpContainer {
+	float: right;
+	margin-right: 8px;
+}
+#needHelpContainer a {
+	text-decoration: underline;
+}
+#nhHead {
+	font-size: 130%;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.thickRule {
+	display: block;
+	height: 7px;
+	background: url('bkg_rule7px.gif') top left repeat-x;
+}
+
+
+
+
+
+
+
+
+/* ------------ NEW CSS - Help with Pharmacy Costs ----------- */
+.lightrow{
+	border: solid 1px #acd0f1;
+	text-align: center;
+	height: 34px;
+	font-size: 130%;
+	color: #FFF;
+	border: solid 1px #acd0f1;
+	background:url('bkg_pharmGradient.gif') top left repeat-x;
+}
+/* ------------ Help with Pharmacy Costs ----------- */
+
+
+
+
+#topLinksbuttons {
+	float: left;
+	padding: 5px 5px 5px 15px;
+	height:28px;}
+
+#topLinks {
+	display: block;
+	float: right;
+	margin: 10px 20px 0 0;
+}
+#textSizeControl {
+	display: block;
+	float: right;
+	margin: 10px 5px 0px 0px;
+	/*font-size: 11px;*/
+	color: #2575b0;
+	border: #ccc solid 1px;
+}
+#textSizeControl li {
+	height: 20px;
+	padding-bottom: 5px;
+	float: left;
+	border-left: #ccc solid 1px;
+}
+#textSizeControl a {
+	display: block;
+	padding: 8px;
+	cursor: pointer;
+}
+#textSizeControl span {
+	display: block;
+	padding: 8px 8px;
+}
+#textSizeControl .size1 {
+	line-height: 1em;
+	padding-top: 7px;
+	font-size: 1em;
+	text-decoration: none;
+}
+#textSizeControl .size2 {
+	line-height: 1em;
+	padding-top: 5px;
+	font-size: 1.3em;
+	text-decoration: none;
+}
+#textSizeControl .size3 {
+	line-height: 1em;
+	padding-top: 3px;
+	font-size: 1.6em;
+	text-decoration: none;
+}
+#textSizeControl .first {
+	border: none;
+}
+#textSizeControl .active {
+	background-color: #fff;
+}
+#textSizeControl .inactive {
+	background-color: #ededed;
+}
+.thinRule {
+	display: block;
+	height: 3px;
+	background: url('bkg_rule3px.gif') top left repeat-x;
+}
+
+.thinRulehr {
+	display: block;
+	height: 1px;
+	background: url('bkg_rule3px.gif') top left repeat-x;
+	margin: 10px 0 10px 0px;
+}
+
+
+#breadCrumbTrail {
+	height: 25px;
+	padding-left: 18px;
+	padding-top: 5px;
+	font-size: 110%;
+	background-image: url('bg_submain.gif');
+	background-repeat:repeat-x;
+	background-position:top;
+	
+}
+#breadCrumbTrail .currentPage {
+	font-weight: bold;
+	color: #5f8a2a;
+}
+
+/* ------------- Lists ----------------- */
+.outerListOpen {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.outerListOpen li {
+	background-image: url('arrowDown.gif');
+	background-position: 3px 5px;
+	background-repeat: no-repeat;
+	padding-left: 14px;
+	padding-right: 3px;
+	font-weight: bold;
+}
+.outerListClosed {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.outerListClosed li {
+	background-image: url('arrowRight.gif');
+	background-position: 6px 3px;
+	background-repeat: no-repeat;
+	padding-left: 14px;
+	padding-right: 3px;
+	font-weight: bold;
+}
+.outerListItem {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.outerListItem li {
+	background-image: url('bullet.gif');
+	background-position: 4px 3px;
+	background-repeat: no-repeat;
+	padding-left: 14px;
+	padding-right: 3px;
+	font-weight: bold;
+}
+.outerListItem .selected {
+	font-weight: bold;
+	color: #5f8a2a !important;
+}
+.innerMainListOpen {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.innerMainListOpen li {
+	background-image: url('arrowDown.gif');
+	background-position: 3px 5px;
+	background-repeat: no-repeat;
+	padding-left: 14px;
+	font-weight: bold;
+}
+.innerMainListClosed  li {
+	background-image: url('arrowRight.gif');
+	background-position: 3px 3px;
+	background-repeat: no-repeat;
+	padding-left: 14px;
+	font-weight: bold;
+}
+.noBullet li {
+	background-image: none !important;
+	font-weight: normal !important;
+	padding-left: 8px !important;
+}
+.noBullet .selected {
+	font-weight: bold;
+	color: #5f8a2a !important;
+}
+.outerListClosed .selected {
+	font-weight: bold;
+	color: #5f8a2a !important;
+}
+.emptyStartListItem {
+	background-image: none !important;
+}
+.circleList {
+	list-style-type: circle !important;
+}
+.checkList {
+	list-style-type: none !important;
+}
+.checkList li {
+	background-image: url('check.gif');
+	background-position: 0px 3px;
+	background-repeat: no-repeat;
+	padding-top: 5px;
+	padding-left: 25px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	font-size: 100%;
+	color: #000;
+}
+
+/*------- Main Content -------*/
+#leftContent {
+	float: left;
+	width: 246px;
+	margin: 0 0 0 7px;
+	height: 250px; /* This is a hack to prevent floating div on the right from moving if the left column is collapsed */
+	overflow: visible; /* Part of the above hack; done because IE does not recognize the min-height attribute */
+	
+}
+
+
+
+
+#leftContent .top {
+	width: 246px;
+	height: 4px;
+	background: url('bkg_leftContent_top.gif') left top no-repeat;
+}
+#leftContent .middle {
+	padding: 0 3px 0 4px;
+	background: url('bkg_leftContent_middle.gif') left top repeat-y;
+}
+#leftContent .bottom {
+	width: 246px;
+	height: 4px;
+	background: url('bkg_leftContent_bottom.gif') left bottom no-repeat;
+}
+#leftContent .primary {
+	width: 180px;
+	float: left;
+	padding-left: 9px;
+	margin-bottom: 1em;
+}
+#leftContent p {
+	margin-left: 5px;
+	padding: 5px 0 5px 0;
+}
+#leftContent hr {
+	border: none 0;
+	border-top: solid #d3d3d3 1px;
+	height: 1px;
+	width: 100%;
+}
+#leftContent a:link {
+	text-decoration: none;
+}
+#leftContent a:visited {
+	text-decoration: none;
+}
+#leftContent a:active {
+	text-decoration: none;
+}
+#leftContent a:hover {
+	text-decoration: underline;
+}
+
+/*-------------Two column page, right content container (wide container)----------------*/
+.rightContent {
+	float: left;
+	width: 684px;
+	
+	margin: 0 0 0 10px;
+	padding: 0;
+}
+.rightContent .top {
+	width: 684px;
+	height: 4px;
+	background: url('bkg_rightContent_top.gif') left top no-repeat;
+}
+.rightContent .middle {
+	padding: 0 3px 0 4px;
+	min-height: 425px;
+	_height:425px;
+	background: url('bkg_rightContent_middle.gif') left top repeat-y;
+}
+.rightContent .bottom {
+	width: 684px;
+	height: 4px;
+	background: url('bkg_rightContent_bottom.gif') left bottom no-repeat;
+}
+.rightGradient {
+	height: 33px;
+	background: url('bkg_rightContentGradient.gif') left top repeat-x;
+}
+.rightGradient h2 {
+	padding: 4px 0 0 8px;
+}
+.rightContentContainer {
+	padding: 0px;
+}
+.rightContentContainer p {
+	color: #000;
+	font-size: 110%;
+	padding: 0 5px 10px 15px;
+}
+.rightContentContainer h2 {
+	margin: 0 5px;
+}
+.rightContentContainer h3 {
+	margin: 0 5px;
+}
+.rightContentContainer h4 {
+	margin: 0 15px;
+}
+.rightContentContainer h5 {
+	margin: 0 5px;
+}
+.rightContentContainer ul {
+	list-style-type: disc;
+	margin-bottom: 10px;
+	font-size: 110%;
+}
+.rightContentContainer ul li {
+	margin-left: 22px;
+	padding-top: 5px;
+}
+.rightContentContainer ol {
+	list-style-type: decimal;
+	margin-bottom: 10px;
+	font-size: 110%;
+}
+.rightContentContainer ol li {
+	margin-left: 28px;
+	padding-top: 5px;
+}
+.gradient2 {
+	height: 72px;
+	background: url('bkg_gradient2.gif') left top repeat-x;
+}
+
+.gradient2 h2{padding: 9px 0 0 13px;}
+
+.birdTable td {
+	padding-top: 12px;
+	padding-left: 10px;
+}
+.iconTable td {
+	padding-top: 8px;
+	padding-left: 10px;
+}
+.rightContentContainer .arrowList {
+	list-style-type: none;
+}
+.rightContentContainer .arrowList li {
+	background-image: url('arrowRight.gif');
+	background-position: 0px 5px;
+	background-repeat: no-repeat;
+	padding-top: 2px;
+	padding-left: 18px;
+	padding-right: 10px;
+	padding-bottom: 2px;
+	font-size: 100%;
+	color: #000;
+}
+.rightContentContainer .pdfList {
+	list-style-type: none;
+	margin-left: -5px;
+}
+.rightContentContainer .pdfList li {
+	background-image: url('pdf_icon.gif');
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	padding-top: 2px;
+	padding-left: 25px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	font-size: 100%;
+	color: #000;
+}
+
+.fullPageContentContainer .pdfList {
+	list-style-type: none;
+	margin-left: 0px;
+	font-size: 110%;
+}
+.fullPageContentContainer .pdfList li {
+	background-image: url('pdf_icon.gif');
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	padding-top: 2px;
+	padding-left: 25px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	font-size: 100%;
+	color: #000;
+}
+
+.rightInnerLeftContainer {
+	float:left;
+	width: 684px;
+	padding: 10px 0 10px 10px;
+}
+.rightInnerHalfSizeTop {
+	width: 684px;
+	height: 4px;
+	background:url('bkg_rightInnerHalf_top.gif') top left no-repeat;
+}
+.rightInnerHalfSizeMiddle {
+	width: 684px;
+	padding: 0 4px;
+	background:url('bkg_rightInnerHalf_middle.gif') top left repeat-y;
+	font-size: 110%;
+}
+.rightInnerHalfSizeMiddle ul {
+	list-style-type: disc;
+}
+.rightInnerHalfSizeMiddle li {
+	margin-left: 26px;
+	padding-bottom: 4px;
+}
+.rightInnerHalfSizeMiddle h4 {
+	padding-top: 5px;
+	margin-left: 10px;
+	margin-bottom: 3px;
+}
+.rightInnerHalfSizeMiddle p {
+	margin-left: 10px;
+}
+.rightInnerHalfSizeBottom {
+	width: 337px;
+	height: 4px;
+	background:url('bkg_rightInnerHalf_bottom.gif') top left no-repeat;
+}
+.rightInnerRightContainer {
+	float: left;
+	width: 337px;
+	padding: 10px 0 0 10px;
+}
+
+/*------Two-column page, wide right column contents--------*/
+.rightContentInnerContainer {
+	width: 634px;
+	margin: 0 auto;
+}
+.rightContentInnerContainer p {
+	padding: 5px;
+	margin-left: 10px;
+	margin-bottom: 0;
+}
+.rightContentInnerContainer h3 {
+	padding: 5px 0 0 10px;
+}
+.rightContentInnerContainer h4 {
+	padding: 0 0 0 10px;
+}
+.rightContentInnerContainer .top {
+	height: 4px;
+	width: 634px;
+	background: url('bkg_rightContentInner_top.gif') no-repeat;
+}
+.rightContentInnerGradient {
+	width: 626px;
+	height: 33px;
+	margin-left: 4px;
+	background: url('bkg_rightContentGradient.gif') repeat-x;
+}
+.rightContentInnerGradient h2 {
+	padding: 4px 0 0 10px;
+}
+.rightContentInnerContainer .middle {
+	width: 634px;
+	padding: 0;
+	background: url('bkg_rightContentInner_middle.gif') repeat-y;
+}
+.rightContentInnerContainer .bottom {
+	height: 4px;
+	width: 634px;
+	background: url('bkg_rightContentInner_bottom.gif') no-repeat;
+}
+
+/*-------------Full page content----------------*/
+.fullPageContent {
+	width: 939px;
+	margin: 0 auto;
+	padding: 0;
+}
+.fullPageContent .top {
+	width: 939px;
+	height: 4px;
+	background: url('bkg_fullPageContent_top.gif') left top no-repeat;
+}
+.fullPageContent .middle {
+	padding: 0 3px 0 4px;
+	background: url('bkg_fullPageContent_middle.gif') left top repeat-y;
+}
+.fullPageContent .bottom {
+	width: 939px;
+	height: 4px;
+	background: url('bkg_fullPageContent_bottom.gif') left bottom no-repeat;
+}
+
+.fullPageGradient {
+	height: 33px;
+	background: url('bkg_fullPageContentGradient.gif') left top repeat-x;
+}
+.gradient {
+	height: 33px;
+	background: url('bkg_stdGradient.gif') repeat-x;
+}
+.gradient h2 {
+	padding: 4px 0 0 8px;
+}
+.gradient p {
+	padding: 6px 8px 0 0 !important;
+}
+.fullPageContentContainer {
+	padding: 0px 5px 0 0px;
+}
+.fullPageContentContainer p {
+	color: #000;
+	font-size: 110%;
+	margin: 0 0 5px 0;
+}
+.fullPageInnerContainer {
+	width: 903px;
+	margin: 0 auto;
+	padding: 0;
+}
+.fullPageInnerContainer .innerTop {
+	width: 903px;
+	height: 4px;
+	background: url('bkg_fullPageInner_top.gif') no-repeat;
+}
+.fullPageInnerContainer .innerMiddle {
+	padding: 0 4px;
+	background: url('bkg_fullPageInner_middle.gif') repeat-y;
+}
+.fullPageInnerContainer .innerBottom {
+	width: 903px;
+	height: 4px;
+	background: url('bkg_fullPageInner_bottom.gif') no-repeat;
+}
+.fullPageInnerContainer .innerMiddle h3 {
+	padding: 5px 0 0 10px;
+}
+.fullPageInnerContainer .innerMiddle h4 {
+	padding: 0 0 0 10px;
+}
+.fullPageInnerContainer .innerMiddle p {
+	color: #000;
+	font-size: 115%;
+	padding: 5px 0 0 10px;
+	margin: 0;
+}
+.halfPageInnerContainer {
+	float: left;
+	width: 454px;
+	margin: 0;
+	padding: 10px 0 0 10px;
+}
+.halfPageInnerContainer .halfInnerTop {
+	width: 454px;
+	height: 4px;
+	background: url('bkg_halfPageInner_top.gif') top left no-repeat;
+
+}
+.halfPageInnerContainer .halfInnerMiddle {
+	padding: 0 4px;
+	background: #000 url('bkg_halfPageInner_middle.gif') top left repeat-y;
+}
+.halfPageInnerContainer .halfInnerBottom {
+	width: 454px;
+	height: 4px;
+	background: url('bkg_halfPageInner_bottom.gif') top left no-repeat;
+}
+.halfPageInnerContainer .halfInnerMiddle h3 {
+	padding: 5px 0 0 10px;
+}
+.halfPageInnerContainer .halfInnerMiddle h4 {
+	padding: 0 0 0 10px;
+}
+.halfPageInnerContainer .halfInnerMiddle p {
+	color: #000;
+	font-size: 115%;
+	padding: 5px 0 0 10px;
+	margin: 0;
+}
+.halfPageInnerContainer .halfInnerMiddle ul {
+	list-style-type: disc;
+	margin-left: 24px;
+	padding-top: 10px;
+}
+.halfPageInnerContainer .halfInnerMiddle li {
+	padding-bottom: 8px;
+}
+.halfPageInnerRight {
+	float: left;
+	padding: 13px 10px 0 10px;
+	margin: 0;
+}
+
+/* ------------- Tables ----------------- */
+
+/*------- Footer -------*/
+#footer {
+	height: 20px;
+	padding: 12px 12px 0 12px;
+}
+#footer .links li{
+	padding-left: 3px;
+	float: left;
+}
+
+/*-----------Disclaimer--------*/
+#disclaimerDiv {
+	padding: 0 8px 8px 8px;
+	color: #000;
+	font-size: 100%;
+}
+#disclaimerDiv p {
+	margin-bottom: 10px;
+}
+
+/*-----------Footnotes--------*/
+#footnoteDiv {
+	padding: 8px;
+	color: #000;
+	font-size: 100%;
+	overflow: scroll;
+	height: 100px;
+	overflow-x: hidden;
+	color:#999999;
+
+}
+#footnoteDiv p {
+	margin-bottom: 5px;
+}
+
+
+/*------- PAGE SPECIFIC -------*/
+
+/* --------- Home pages --------*/
+.welcomeText {
+	font-size: 125% !important;
+}
+
+/* ---------- FAQ Page ----------- */
+#faqDefaultHeader,#faqDefaultSelector {
+	display: block;
+}
+#faqBrokerHeader,#faqProviderHeader,#faqDefaultHeaderDrugs,#faqDefaultHeaderBenefits,#faqDefaultOptions,#faqDefaultBenefitsContent,#faqDefaultDrugsContent,#faqBrokerContent,#faqProviderContent {
+	display: none;
+}
+#disabledText {
+	color: #666;
+}
+#benefitsGoButton {
+	display: none;
+}
+
+/* ---------- Providers Page ----------- */
+#providersDefaultContent,#providersReferralsContent,#providersClaimsContent {
+	display: none;
+}
+
+/* ---------- Privacy Page ----------- */
+#privacyMedInfoContent {
+	display: block;
+}
+#privacyMedInfoContent ul.withHeaders { /* Hack to prevent text in this list with h5 tags inside li tags to be too large */
+	font-size: 100%;
+}
+#privacyMedInfoContent .circleList { /* Hack to prevent this nested list text from shrinking */
+	font-size: 110%;
+}
+#privacyWebInfoContent {
+	display: none;
+}
+
+/* -- News -- */
+.newsEntry {
+	margin-top: 16px;
+}
+.newsEntry h3, .newsEntry p {
+	margin-left: 128px;
+}
+.table10 {
+	font-size: 100% !important;
+	margin: 0 auto;
+	border-spacing: 20px !important;
+	border-collapse: separate;
+}
+.table20 {
+	margin: 0 auto;
+	border-spacing: 20px;
+	border-collapse: separate;
+}
+.stateTable2 {
+	margin: 0 auto;
+	border-spacing: 20px;
+	border-collapse: separate;
+}
+.stateTable3 {
+	margin: 0 auto;
+	border-spacing: 10px;
+	border-collapse: separate;
+}
+.siteMapTable {
+	margin: 0 auto;
+	border-spacing: 10px;
+	border-collapse: collapse;
+}
+
+/*------- Attend Meetings, Attend Events --------*/
+#eventListings table {
+	font-size: 110%;
+}
+.rsvpTableClosed {
+	background: url('arrowRight.gif') center no-repeat;
+}
+.rsvpTableOpened {
+	background: url('arrowDown.gif') center no-repeat;
+}
+.rsvp {
+	display: none;
+}
+
+/* ------------ Help with Pharmacy Costs ----------- */
+.pharmTable {
+	width: 640px;
+	margin: 0 auto;
+}
+.pharmTable .hdrRow {
+	text-align: center;
+	height: 64px;
+	font-size: 140%;
+	font-weight: bold;
+	color: #fff;
+}
+.pharmTable .hdrRow td {
+	border: solid 1px #acd0f1;
+	background:url('bkg_pharmGradient.gif') top left repeat-x;
+}
+.pharmTable .rowLight td {
+	border: solid 1px #acd0f1;
+	text-align: center;
+	height: 34px;
+	font-size: 130%;
+	color: #000;
+}
+.pharmTable .rowDark td {
+	border: solid 1px #acd0f1;
+	background-color: #e4f2fa;
+	text-align: center;
+	height: 34px;
+	font-size: 130%;
+	color: #000;
+}
+#groupAF,#groupGL,#groupMS,#groupTZ {
+	display:none;
+}
+#pharm01,#pharm02,#pharm03,#pharm04,#pharm05,#pharm06,#pharm07,#pharm08,#pharm09,#pharm10,#pharm11,#pharm12,#pharm13,#pharm14,#pharm15,#pharm16,#pharm17,#pharm18,#pharm19,#pharm20,#pharm21,#pharm22,#pharm23,#pharm24,#pharm25,#pharm26 {
+	display:none;
+}
+
+/* ---------------- Site Map ----------- */
+.siteMapContent {
+	font-size: 110%;
+	padding: 10px 5px 0 10px;
+}
+
+/* --------- Email Us, Attend Events, Attend Meetings ------- */
+.tableAttend {
+	font-size: 90% !important;
+}
+.tableAttend td {
+	padding: 3px;
+}
+.tableStd {
+	font-size: 100% !important;
+}
+.tableStd td {
+	padding: 3px;
+}
+.emailTable .emailInput {
+	width: 250px;
+}
+.tableAttend .emailInput {
+	width: 250px;
+}
+.emailTop {
+	width: 160px;
+}
+#coverageSection {
+	display: none;
+}
+#specialRule {
+	display: none;
+}
+#countDown {
+	border: none;
+	width: 30px;
+}
+.restrictedInput {
+	background-color: #d4d0c8;
+}
+
+/* --------------Enroll Online ------------ */
+.borderedContainer {
+	border: solid #d3d3d3 2px;
+	margin: 20px 30px 0 20px;
+	padding: 10px;
+}
+.enrollOuterList {
+	list-style-type: none;
+	font-size:12px;
+}
+.enrollOuterList li {
+	padding: 4px 5px 4px 0px;
+	margin-left: 0px;
+	font-size: 120%;
+	font-weight: bold;
+}
+.enrollInnerList {
+	list-style: disc;
+	margin: 0px 0px 0px 30px;
+}
+.enrollInnerList li {
+	font-weight: normal;
+	color: #000;
+	font-size: 90%; /* Hack to re-adjust font-size to "100%" */
+	padding: 3px 0 0 0;
+}
+.enrollInnerList2 {
+	list-style-type: circle;
+	margin: 4px 0 0 30px;
+}
+.enrollInnerList2 li {
+	font-size: 100%;
+	padding: 0;
+}
+
+/* ----------------- Arcadian2010HomepageTemplate.html page ----------- */
+#bracketAnchor {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+#bracketHolder {
+	z-index: -1;
+	display: block;
+	position: absolute;
+	width: 602px;
+	height: 246px;
+	top: 28px;
+	left: 310px;
+	background: url('brackets.gif') left top no-repeat;
+}
+
+/*------- GENERAL PURPOSE -------*/
+
+/* Holly Hack - give layout to IE 6 elements */
+/* \*/
+* html .gainlayout { height: 1%; }
+/* */
+
+/* Give layout to IE 7 elements */
+.gainlayout { 
+	min-height: 0;
+}
+
+.floatLeft {
+	display: block;
+	float: left;
+}
+.floatRight {
+	display: block;
+	float: right;
+}
+.clearFloats {
+	clear: both;
+}
+.clearRight {
+	clear: right;
+}
+.clearLeft {
+	clear: left;
+}
+.noTextHeight {
+	font-size: 0;
+}
+.rightAlign {
+	text-align: right;
+}
+.centerImage {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.centerText {
+	text-align: center;
+}
+
+/* --------------Forms---------------- */
+.selectBoxStd {
+	width: 200px;
+}
+.selectBoxSmall {
+	width: 120px;
+}
+.selectBoxVerySmall {
+	width: 90px;
+}
+.buttonStd {
+	background: url('bkg_buttonStd.gif') center no-repeat;
+	height: 26px;
+	width: 80px;
+	border: none;
+	font-weight: bold;
+	color: #005587;
+	text-align: center;
+	outline: none;
+	cursor: pointer;
+}
+.buttonStd:hover {
+	background: url('bkg_buttonStdOver.gif') center no-repeat;
+	outline: none;
+	cursor: pointer;
+}
+.buttonGo {
+	background: url('bkg_buttonGo.gif') center no-repeat;
+	height: 26px;
+	width: 40px;
+	border: none;
+	font-weight: bold;
+	color: #005587;
+	text-align: center;
+	outline: none;
+	cursor: pointer;
+}
+.buttonGo:hover {
+	background: url('bkg_buttonGoOver.gif') center no-repeat;
+	outline: none;
+	cursor: pointer;
+}
+.buttonGoDisabled {
+	background: url('bkg_buttonGo.gif') center no-repeat;
+	height: 26px;
+	width: 40px;
+	border: none;
+	font-weight: bold;
+	color: #005587;
+	text-align: center;
+	outline: none;
+	cursor: pointer;
+}
+.buttonGoDisabled:hover {
+	outline: none;
+	cursor: pointer;
+}
+.buttonWide {
+	background: url('bkg_buttonWide.gif') center no-repeat;
+	height: 26px;
+	width: 120px;
+	border: none;
+	font-weight: bold;
+	color: #005587;
+	text-align: center;
+	outline: none;
+	cursor: pointer;
+}
+.buttonWide:hover {
+	background: url('bkg_buttonWideOver.gif') center no-repeat;
+	outline: none;
+	cursor: pointer;
+}
+.button150 {
+	background:url('bkg_button150.gif') center no-repeat;
+	height: 26px;
+	width: 150px;
+	border: none;
+	font-weight: bold;
+	color: #005587;
+	text-align: center;
+	outline: none;
+	cursor: pointer;
+}
+.button150:hover {
+	background:url('bkg_button150Over.gif') center no-repeat;
+	outline: none;
+	cursor: pointer;
+}
+.button180 {
+	background:url('bkg_button180.gif') center no-repeat;
+	height: 26px;
+	width: 200px;
+	border: none;
+	font-weight: bold;
+	color: #005587;
+	text-align: center;
+	outline: none;
+	cursor: pointer;
+}
+.button180:hover {
+	background:url('bkg_button180Over.gif') center no-repeat;
+	outline: none;
+	cursor: pointer;
+}
+.textAreaStd {
+	width: 400px;
+	height: 100px;
+}
+/* -------- Content padding ------------ */
+
+.pad10 {
+	display: block;
+	width: 10px;
+	height: 10px;
+	background: transparent;
+}
+.top8 {
+	margin-top: 8px;
+}
+
+/* Miscellaneous */
+.zoomable {
+	font-size: 1em;
+	
+}
+.movieContainer {
+	width: 320px;
+	margin: 20px auto;
+}
+.indent50Container {
+	margin-left: 50px;
+}
+.indent100Container {
+	margin-left: 100px;
+}
+.indent20Container {
+	margin-left: 0px;
+}
+.up15 {
+	margin-top: -15px;
+}
+.jumpTo {
+	background-color: #f3fde6;
+	padding: 3px;
+}
+
+/* Modal Window Popup Content styles added by abm */
+.subModalPage {
+	background: url('bkg_modalPopup.gif') top left repeat-x;
+}
+.modalContent {
+	padding: 10px;
+	font-size: 110%;
+}
+.popupTable {
+	width: 90%;
+	text-align: center;
+	border: solid 1px #000;
+	margin: 0 auto;
+}
+.popupTable td {
+	padding: 2px;
+	border: solid 1px #000;
+}
+.popupTable td.headerCell {
+	background-color: #ccc;
+}
+.popupEmailTable {
+	width: 90%;
+	margin: 0 auto;
+}
+.popupEmailTable td {
+	padding: 2px;
+}
+.popupEmailTable .textInput {
+	width: 280px;
+}
+.popupEmailTable .textareaInput {
+	width: 280px;
+	height: 100px;
+}
+
+/* Code added by abm for jquery inline calendar (see separate datePicker.css) */
+#datePickerDiv {
+	width: 350px;
+	margin: 0 auto;
+}
+
+/* Temporary styles */
+.returnToStageGraf {
+	margin-top: 10px;
+	font-size: 100%;
+	font-weight: bold;
+}
+.returnToStageLink {
+	background-color: #00ff99;
+	border: solid 2px #4d4d4d;
+	text-decoration: none;
+	display: block;
+	padding: 4px;
+	width: 160px;
+}
+.returnToStageLink:hover {
+	background-color: #ffffcc;
+	text-decoration: underline;
+	color: #000;
+}
+
+
+
+.topnav {
+	font-size: 14px; 
+	width: 203px; 
+	display:block; 
+	border-bottom: 1px solid #ccc; 
+	padding-left: 35px; 
+	background-image:url(greencross.gif);  
+	background-repeat:no-repeat; 
+	background-position: 5px 12px; 
+	line-height: 30px;
+	float:left;
+	}
+
+.topnavactive {
+	font-size: 14px; 
+	width: 203px; 
+	display:block; 
+	border-bottom: 1px solid #ccc; 
+	padding-left: 35px; 
+	background-image:url(greenminus.gif);  
+	background-repeat:no-repeat; 
+	background-position: 5px 12px; 
+	line-height: 30px;
+	float:left;
+	background-color:#fafbe9;
+	}
+	
+
+	
+.topnav:hover {
+	background-color:#fafbe9;
+	}	
+
+
+a.findnav {
+	font-size: 12px; 
+	width: 206px;  
+	border-bottom: 1px solid #ccc; 
+	padding: 7px 0 8px 30px; 
+	float:left;
+	}
+	
+.findnav:hover {
+	background-image:url(greenarrow.gif);  
+	background-repeat:no-repeat; 
+	background-position: 10px 10px;
+	}
+
+.subnav {
+	font-size: 12px; 
+	width: 206px;  
+	border-bottom: 1px solid #ccc; 
+	padding-left: 30px; 
+	line-height: 30px; 
+	_height:30px;
+	float:left;
+	}
+	
+.subnav:hover {
+	background-image:url(greenarrow.gif);  
+	background-repeat:no-repeat; 
+	background-position: 10px 10px;
+	}
+
+
+.subnavactive {
+	font-size: 12px; 
+	width: 206px; 
+	display:block; 
+	border-bottom: 1px solid #ccc; 
+	padding-left: 30px; 
+	line-height: 30px; 
+	float:left;
+	background-image:url(greenarrow.gif);  
+	background-repeat:no-repeat; 
+	background-position: 10px 10px;
+	background-color:#fffdcb;
+	}
+
+	
+.subnav:hover {
+	background-image:url(greenarrow.gif);  
+	background-repeat:no-repeat; 
+	background-position: 10px 10px;
+	}
+
+.disclaimerbody   {
+	height:400px;
+	padding:0px; 
+	text-align:center;  
+	padding-top: 80px;
+	}
+	
+.disclaimerinnter {
+	width:500px; 
+	margin:0px auto; 
+	text-align:left; 
+	margin-bottom: 20px;
+	}
+	
+.exitlinks        {
+	font-size: 16px; 
+	font-weight:bold;
+	}
+	
+.exitlinks       a{
+	padding: 10px;
+	}
+	
+#masterdiv	{
+	width:300px;
+	_width:240px;
+	}
+	
+.leftnavnumbers	{
+	padding: 5px 10px 0 10px;
+	height: 60px;
+	height:55px;
+	width: 210px;
+	margin: 0 auto;
+	}
+	
+	
+#cover {
+display:none;
+left:0px;
+top:0px;
+width:100%;
+height:100%;
+_width:1024px;
+_height:800px;
+text-align:center; vertical-align:middle;
+background:gray;
+filter:alpha(Opacity=75);
+opacity:0.5;
+-moz-opacity:0.75;
+-khtml-opacity:0.75;
+z-index:5;
+}
+
+
+#dialog {
+display:none;
+top: 
+width:500px;
+height:500px;
+position: absolute;
+z-index:9999;
+background:white;
+padding:2px;
+font:10pt tahoma;
+border:1px solid gray
+}
+
+.idTabs li{
+	list-style-type: circle; 
+	margin: 0; padding:0;
+	
+}
+
+.prenav {
+	padding-left:10px; 
+	padding-bottom:0; 
+	margin:0;
+}
+.prenav li{
+	list-style:circle; 
+	padding-bottom:0; 
+	margin:0;
+}
+.prenavdiv {
+	padding-left:20px; 
+	padding-bottom:0; 
+	margin:0; 
+	padding-top: 10px;
+}
+
+.prenavdiv li{
+	list-style:circle; 
+	padding-bottom:3px; 
+	margin:0; 
+}
+		
+
+.zipcodesearch {
+	font-size:14px;
+	width: 350px; 
+	border: 1px solid #CCC; 
+	background-color:#FFF; 
+	background-image:url(bg_popup.gif); 
+	background-position:top; 
+	background-repeat:repeat-x;
+	padding: 15px 25px 25px 25px;
+	position: absolute;
+	visibility:hidden;
+	z-index:1;
+	/*top: 360px;*/
+	top: 150px;
+	left:400px;
+}
+
+
+.helppopup {
+	font-size:14px;
+	width: 500px; 
+	border: 1px solid #CCC; 
+	background-color:#FFF;  
+	padding: 10px 10px 10px 10px;
+	position: absolute;
+	visibility:hidden;
+	overflow: scroll;
+	height: 250px;
+	z-index:5;
+	/*top: 180px;*/
+	top: 205px;
+	right:600px;
+	overflow-x: hidden;
+
+}
+
+
+.helppopup2 {
+	font-size:14px;
+	width: 500px; 
+	border: 1px solid #CCC; 
+	background-color:#FFF;  
+	padding: 10px 10px 10px 10px;
+	position: absolute;
+	overflow: scroll;
+	height: 250px;
+	z-index:1;
+	top: 385px;
+	right:600px;
+	overflow-x: hidden;
+	visibility:hidden;
+}
+
+
+.helppopup3 {
+	font-size:12px;
+	width: 500px;
+	height: 250px;
+	border: 1px solid #CCC; 
+	background-color:#FFF;  
+	padding: 10px 10px 10px 10px;
+	position: absolute;
+	visibility:hidden;
+	overflow:scroll;
+	overflow-x: hidden;
+	z-index:1;
+	/*top: 180px;*/
+	top: 250px;
+	right:100px;
+}
+
+
+.zipcodesearchshadow {
+	width: 330px; 
+	height:180px;
+	padding: 15px 25px 25px 25px;
+	background-color: #CCC;
+	position: absolute;
+	z-index:999999;
+	top: 10px;
+	left:555px;
+	
+	}
+
+.zipcodesearch h1 {
+	color:#0099CC; 
+	font-size:22px;
+	margin: 0 0 10px 0px;
+	}
+
+.leadgenphone {
+	font-size:14px;
+	width: 340px; 
+	height:230px; 
+	border: 1px solid #CCC; 
+	background-color:#FFF; 
+	background-image:url(bg_popup.gif); 
+	background-position:top; 
+	background-repeat:repeat-x;
+	padding: 15px 25px 25px 25px;
+	position: absolute;
+	visibility:hidden;
+	z-index:1;
+	top: 405px;
+	right:200px;
+	}
+
+
+	
+.leadgenphone {
+	font-size:14px;
+	width: 340px; 
+	height:230px; 
+	border: 1px solid #CCC; 
+	background-color:#FFF; 
+	background-image:url(bg_popup.gif); 
+	background-position:top; 
+	background-repeat:repeat-x;
+	padding: 15px 25px 25px 25px;
+	position: absolute;
+	visibility:hidden;
+	z-index:1;
+	top: 420px;
+	right:396px;
+	}
+
+#w1{z-index:2; 
+    top: 17px;
+	position: absolute;
+	font-size:14px;
+	width:300px;
+	padding: 10px;
+	visibility:hidden;}
+	
+	
+	
+#w1 h2 {
+	color:#0099CC; 
+	font-size:18px;
+	margin: 0 0 10px 0px;
+	}
+
+
+#w2{
+	text-align:center; 
+	z-index:3; 
+	position:absolute; 
+	top:195px; 
+	left: 15px; 
+	padding: 0 15px 0 15px 0; 
+	font-size:12px; 
+	width: 280px;
+	
+}
+
+
+#w12{ 
+	z-index:3; 
+	position:absolute; 
+	top:370px; 
+	padding: 0 15px 0 15px 0;
+	margin-left: 10px;
+	font-size:12px; 
+	width: 400px;
+	visibility:hidden;
+	color:#000;
+	
+}
+
+#w13{ 
+	z-index:3; 
+	position:absolute; 
+	top:290px; 
+	left: 320px;
+	padding: 0 15px 0 15px 0;
+	margin-left: 10px;
+	font-size:12px;
+	width: 200px;
+	visibility:hidden;
+	color:#000;
+	background-color:#FFF;
+	border: 1px solid #999;
+}
+
+#w14{ 
+	z-index:3; 
+	position:absolute; 
+	top:290px; 
+	left: 320px;
+	padding: 0 15px 0 15px 0;
+	margin-left: 10px;
+	font-size:12px;
+	width: 200px;
+	visibility:hidden;
+	color:#000;
+	background-color:#FFF;
+	border: 1px solid #999;
+}
+
+.helpplanicon {position: absolute ;}
+
+.leadgentable2    { z-index: 7; position: relative;  background-color:#FFF; border:1px solid #CCC; }
+.leadgentable2 td{ font-size:12px; margin: 0 auto; padding: 5px;}
+#w20 { visibility:hidden;}
+#w21 {position:absolute; z-index:7; top: 805px; width: 245px; visibility:hidden;}
+
+#w2 h1{
+	color:#0099CC; 
+	font-size:28px;
+	padding: 0 0 5px 0px;
+	}
+
+#w3{ visibility:hidden;  font-size:14px; padding-top:10px; position:absolute; width: 200px; padding:10px; top: 175px; left: 10px;}
+
+
+#w3 strong{color:#0099CC; }
+#w3 p {margin-bottom:10px;}
+#w4{text-align:center; z-index:3; top: 120px; width: 300px; position:absolute; visibility:hidden;}	
+
+
+
+	
+	
+.btn { position:absolute; top: 5px; right:0; font-size:12px; font-weight:bold; }	
+
+
+
+.leadgenphone h1 {
+	color:#0099CC; 
+	font-size:30px;
+	margin: 0 0 10px 7px;
+	}
+	
+.leadgenphone h2 {
+	color:#0099CC; 
+	margin: 0 0 10px 7px;
+	}
+	
+.leadgenphone p {
+	margin: 0 7px 10px 7px;
+	}
+	
+.leadgenphone input {
+	width:125px;
+	}
+
+
+.leadgen {
+	font-size:13px;
+	float:left; 
+	margin-top: 10px;
+	}	
+	
+ 	
+.leadgen #w4{text-align:center; z-index:3; top: 120px; width: 300px; position:absolute; visibility:hidden;}	
+	
+.leadgen h1 {
+	color:#0099CC; 
+	margin: 0 0 15px 7px;
+	}
+	
+.leadgen p {
+	margin: 0 7px 10px 7px;
+	}
+	
+.leadgen input {
+	width:120px;
+	}
+
+.reqpoint {color: #990000;}
+	
+.leadgendisclamer {
+	font-size:10px; 
+	color:#333333;
+	}
+	
+.missedfields {
+	font-size:12px; 
+	color:#990000; 
+	}
+	
+	
+
+
+.tagline	{
+	margin-bottom: 15px;
+}
+
+.tagline  h1{
+	font-size:36px; 
+	color:#0099CC;
+}
+.tagline  h2{
+	font-size:16px; 
+	color:#666666;
+	line-height: 15px;
+	font-weight:bold;
+	padding-left:2px;
+}
+.tagline  h3{
+	font-size:16px; 
+	color:#669933; 
+	line-height: 5px;
+	padding-left:2px;
+	
+	font-style:italic;
+	
+}
+			
+.enrollnow{
+	float:left; 
+	width: 260px; 
+	font-size:16px;  
+	color:#666666; 
+	line-height: 34px; 
+	padding: 0 10px 0 0;
+	font-weight:bold;
+	
+	}
+	
+.enrollnow2011{
+	float:left; 
+	width: 260px; 
+	font-size:14px;  
+	color:#666666;  
+	padding: 0 10px 0 0;
+	margin-top:10px;
+	font-weight:bold;
+	}	
+
+.compairplans {
+	float:left; 
+	width: 260px; 
+	font-size:18px;  
+	color:#666666; 
+	line-height: 34px; 
+	padding: 0 10px 0 0;
+	}
+
+#callfooter {
+	height:120px; 
+	width: 600px; 
+	background-color: 
+	#EAF4FA;  
+	float:left; 
+	}
+
+#callfooter strong{ 
+	color:#00699a;
+	}
+
+
+.calltitle {
+	margin-bottom: 10px; 
+	color:#000;
+	}
+
+.callnumbers {
+	width: 430px; 
+	float:left; 
+	padding: 10px;
+	}
+
+.callnumberslt  {
+	float:left; 
+	margin-right: 45px; 
+	color:#000;
+	}
+
+.callnumbersrt  {
+	float:left; 
+	color:#000;
+	}
+	
+.callimage	{
+	float:right; 
+	height:90px;
+	}
+	
+.callyounow	 {
+	float:right; 
+	width: 135px; 
+	height:30px; 
+	color:#FFF; 
+	text-align:center; 
+	line-height:30px;  
+	background-image:url(/web/20110202233733im_/http://www.texascommunitycare.com/css/images/bg_callnow.gif); 
+	background-position:bottom; 
+	background-repeat:repeat-x; 
+	font-size:14px; 
+	font-weight:bold; 
+	display:block;
+	}
+	
+.callyounow a{
+	color:#FFF;
+	}	
+	
+.mainnavbox	{
+	width:960px; 
+	height:30px
+	}
+a.mainnav {
+	float:left; 
+	border-right: 1px #CCC solid;  
+	/* width: 191px; */
+                width: 239px; 
+	height:30px; 
+	line-height: 30px; 
+	text-align:center; 
+	font-size: 14px; 
+	text-decoration:none; 
+	background-color:#f3f6f0; 
+	color:#336699; 
+	font-weight:bold; 
+	}
+	
+
+.mainnav:hover	{background-color:#fffdcb; }	
+
+a.mainnavactive {
+	float:left; 
+	border-right: 1px #CCC solid;  
+	/* width: 191px; */
+                width: 239px; 
+	height:30px; 
+	line-height: 30px; 
+	text-align:center; 
+	font-size: 14px; 
+	text-decoration:none; 
+	background-color:#fffdcb; 
+	color:#336699; 
+	font-weight:bold; 
+	}
+
+
+.searchbox {float:right;  padding-right: 13px; margin-top:10px;}
+.planbuttons       {list-style-type:none; padding:0; margin:0; display: inline;}
+.planbuttons li    {display: inline; list-style-type:none;}
+.planbox           {padding: 20px 10px 10px 20px; border-bottom: 1px solid #ccc;}
+.planboxbtm        {padding: 20px 10px 10px 20px;}
+.planbox:hover     {background-color: #E7F3FF;}
+.planboxbtm:hover  {background-color: #E7F3FF;}
+
+.leadgentable    {margin: 0 20px 0px 20px;}
+.leadgentable td{ font-size:14px;padding: 5px; margin: 0 auto;}
+.testing {padding: 6px 15px 6px 15px; border-bottom:1px solid #CCC; width:280px; margin-top:20px; margin-bottom:20px; }
+.testing li {display:inline; padding: 6px 15px 6px 15px; margin-right:5px; height:15px; border: 1px #CCC solid; font-size:12px; font-weight:bold; }
+
+
+.leadgentable3    {margin: 0 20px 0px 10px;}
+.leadgentable3 td{ font-size:14px; padding: 5px; margin: 0 auto;}
+.testing {padding: 6px 15px 6px 15px; border-bottom:1px solid #CCC; width:280px; margin-top:20px; margin-bottom:20px; }
+.testing li {display:inline; padding: 6px 15px 6px 15px; margin-right:5px; height:15px; border: 1px #CCC solid; font-size:12px; font-weight:bold; }
+
+ul.hmpage    { color:#000000; list-style-type: disc;}
+ul.hmpage li { margin-bottom: 10px; margin-left:20px;
+font-size:14px;}
+
+.disclaimerbody   {height:400px;padding:0px; text-align:center;  padding-top: 80px;}
+.disclaimerinnter {width:500px; margin:0px auto; text-align:left; margin-bottom: 20px;}
+.exitlinks        {font-size: 16px; font-weight:bold;}
+.exitlinks       a{padding: 10px;}
+
+.timestamp { float:right; padding-top: 10px; margin-right: 15px; font-size:12px;}
+
+
+
+.plantitle 		      {font-size:28px;} /*{font-size:16px; font-weight:bold;}*/
+.plantitlebg  td	{background-color: #f2f2f2;}
+.plantitlepd 	   	{padding:0 20px 0 20px;}
+.planfeature	   	{padding:10px; text-align:left;}
+.quickcompare table {border-collapse: collapse;}
+.quickcompare td 	{border-width: 1px; border-style: solid dotted; border-color:#CCC;}
+
+
+
+/* JG Additions 9/2010 */
+.alert {
+	display:block;
+	color:#c56700;
+	padding:1px 0 0 20px;
+	background:url(icon_alert.gif) top left no-repeat;
+}
+.alert a {
+	color:#c56700;
+}
+#errorMsg {
+	margin:15px;
+	display:none;
+}
+#nextStep {
+	margin:15px;
+	display:none;
+}
+.nextStepLink {
+	text-indent:-9999px;
+	width:103px;
+	height:42px;
+	background:url(nextstep.jpg) top left no-repeat;
+	float:right;
+	display:block;
+}
+.enrollLink {
+	text-indent:-9999px;
+	width:197px;
+	height:28px;
+	background:url(beginonlineenrollment.jpg) top left no-repeat;
+	display:block;
+	padding-right:10px;
+}
+
+.enrollLink_es {
+	text-indent:-9999px;
+	width:232px;
+	height:28px;
+	background:url(beginonlineenrollment_es.jpg) top left no-repeat;
+	display:block;
+	float:left;
+	padding-right:10px;
+	margin-top:20px;
+}
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 23:37:33 Feb 02, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 04:30:31 May 29, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 103.814
+  exclusion.robots: 0.058
+  exclusion.robots.policy: 0.052
+  RedisCDXSource: 22.451
+  esindex: 0.007
+  LoadShardBlock: 61.681 (3)
+  PetaboxLoader3.datanode: 123.845 (4)
+  load_resource: 481.749
+  PetaboxLoader3.resolve: 393.473
+*/

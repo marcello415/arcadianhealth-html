@@ -1,0 +1,233 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+function showError(errorCode) {
+	var msg;
+	switch (errorCode) {
+		case "INVALID_REQUEST":
+			msg = '<span class="alert">There was a problem with the data provided.  Please try again.</span>';
+			break;
+		case "SERVER_ERROR":
+			msg = '<span class="alert">We\'re sorry, but there was a problem connecting to the server.<br />Please try again later.</span>';
+			break;
+	}
+	if (msg != null) {
+		$('#errorMsg').html(msg).show('slow');
+	}
+}
+
+
+function hideError() {
+	$('#errorMsg').hide('fast');
+}
+
+
+// ----- Used for messaging display --------------------------
+
+function showInitMsg() {
+	$('#submitContainer').html('Initializing...').show();
+}
+function hideInitMsg() {
+	$('#submitContainer').hide();
+}
+
+function showCountyLimitsMsg() {
+	var msg = '<p>If your county or parish of residence is not in the list above, we do not carry plan coverage in your area. ';
+	msg += 'Please <a href="hm/contacthp.php">contact us</a> for more information.</p><br>';
+	$('#countyLimitsMsg').html(msg).fadeIn('fast');
+}
+
+function showSearchButton(url) {
+	var btn = '<input type="image" src="images/findplans.gif" alt="Find Plans" class="submitBtn" />';
+	$('#submitContainer').html(btn).fadeIn('fast');
+	$('.submitBtn').click(function(event) {
+			event.preventDefault();
+			window.location=url;
+	});
+}
+
+
+
+
+// ----- Build content for display, based on server return data ----------------------------
+
+function buildStateList(stateData) {
+	var results = '<option value="">Please select</option>\n';
+	for (var i = 0; i < stateData.length; i++) {
+		var state = stateData[i];
+		results += '<option value="' + state.id + '">' + state.name + '</option>\n';
+	}
+	return results;
+}
+
+
+function buildCountyList(countyData) {
+	var results = '<option value="">Please select</option>\n';
+	for (var i = 0; i < countyData.length; i++) {
+		var county = countyData[i];
+		results += '<option value="' + county.group + '">' + county.name + '</option>\n';
+	}
+	return results;
+}
+
+
+$(document).ready(function(){
+	$('#locationSearch .planYear').bind('change', function(event) { 
+		event.preventDefault(); 
+		
+		if ($(this).val() != "") {
+			// Request states for this plan year.
+			
+			// Add loading message to 'states' dropdown.
+			$('#locationSearch #state').html('<option value="">Loading...</option>');
+		
+			
+			var dataStr = 'req=states&planYear=' + $(this).val();
+			
+			$.ajax({
+				type: "POST",
+				url: locCheckPath,			// NOTE: path set via php write
+				data: dataStr,
+				dataType: "json",
+				success: function(data) {
+					if (data.msg=="INVALID_REQUEST") {
+						showError("INVALID_REQUEST");
+						$('#locationSearch #state').html('<option value="">--</option>');
+					} else if (data.msg=="STATE_LIST") {
+						// Disable the year selector.
+						$('#locationSearch .planYear').attr('disabled', true);
+						// And build / display our state list.
+						$('#locationSearch #state').html(buildStateList(data.states)).attr('disabled', false);
+					}
+					
+					// hideSearching();
+				},
+				error: function() {
+					// Remove the 'Loading' message from the state dropdown.
+					$("#locationSearch #state option[value='']").remove();
+					
+					showError("SERVER_ERROR");
+				}
+			});
+			
+		}
+	});
+	
+	
+	$('#locationSearch #state').bind('change', function(event) { 
+		event.preventDefault(); 
+		
+		if ($(this).val() != "") {
+			// Request counties for this state.
+			
+			// Add loading message to 'counties' dropdown.
+			$('#locationSearch #county').html('<option value="">Loading...</option>');
+		
+			var dataStr = 'req=counties&state=' + $(this).val();
+			
+			$.ajax({
+				type: "POST",
+				url: locCheckPath,			// NOTE: path set via php write
+				data: dataStr,
+				dataType: "json",
+				success: function(data) {
+					if (data.msg=="INVALID_REQUEST") {
+						showError("INVALID_REQUEST");
+						$('#locationSearch #county').html('<option value="">--</option>');
+					} else if (data.msg=="COUNTY_LIST") {
+						// Disable the state selector.
+						$('#locationSearch #state').attr('disabled', true);
+						// And build / display our state list.
+						$('#locationSearch #county').html(buildCountyList(data.counties)).attr('disabled', false);
+						// Also, let's show a message informing users that their county may
+						// not be in the list.  
+						showCountyLimitsMsg();
+					}
+					
+					// hideSearching();
+				},
+				error: function() {
+					// Remove the 'Loading' message from the county dropdown.
+					$("#locationSearch #county option[value='']").remove();
+					
+					showError("SERVER_ERROR");
+				}
+			});
+			
+		}
+	});
+	
+	
+	$('#locationSearch #county').bind('change', function(event) { 
+		event.preventDefault(); 
+		
+		if ($(this).val() != "") {
+			// Send the value for the selected county (is the group name) to the server.
+			
+			// Add 'initializing' message (final step before allowing form submission).
+			showInitMsg();
+		
+			var dataStr = 'req=group&group=' + $(this).val();
+			
+			$.ajax({
+				type: "POST",
+				url: locCheckPath,			// NOTE: path set via php write
+				data: dataStr,
+				dataType: "json",
+				success: function(data) {
+					if (data.msg=="INVALID_REQUEST") {
+						showError("INVALID_REQUEST");
+						hideInitMsg();
+					} else if (data.msg=="AREA_URL") {
+						// Remove the 'please select' item from the list
+						// Prevents users from selecting this, after a valid choice has been made.
+						$("#locationSearch #county option[value='']").remove();
+
+						showSearchButton(data.url);
+					}
+				},
+				error: function() {
+					// Hide the button message.
+					hideInitMsg();
+					
+					showError("SERVER_ERROR");
+				}
+			});
+			
+		}
+	});
+	
+	
+});
+
+
+}
+/*
+     FILE ARCHIVED ON 17:19:51 Oct 20, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 08:13:15 May 19, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 682.708
+  exclusion.robots: 0.071
+  exclusion.robots.policy: 0.062
+  RedisCDXSource: 2.614
+  esindex: 0.009
+  LoadShardBlock: 660.319 (3)
+  PetaboxLoader3.datanode: 119.807 (4)
+  load_resource: 102.069
+  PetaboxLoader3.resolve: 48.77
+*/
